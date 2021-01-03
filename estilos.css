@@ -30,6 +30,8 @@ div p{
 
 .navbar-nav.navbar-center {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     left: 22%; 
     transform: translatex(-9%);
     font-size: 16px;
