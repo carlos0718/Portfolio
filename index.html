@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=zz, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
     <!--Fuentes sacado de google-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
@@ -15,10 +15,11 @@
         <div class="fondo">
             <header>
                 <div>
-                    <h1>CARLOS JESÚS</h1>
+                    <h1><b> CARLOS JESÚS</b></h1>
                 </div>
                 <div>
-                    <h2>DESARROLLADOR FULL-STACK</h2>
+                    <h2><b>DESARROLLADOR FULL-STACK</b> </h2>
+                    <h5> <br> Alumno del 2do año de la carrera de Tecnicatura Superior de Sistemas Informáticos en la UTN-FRGP.</h5>
                 </div>
             </header>
             <!-- <p>Podés filtrar los lenguajes de programación por Front-end y Back-end.<br> Encontrarás los lenguajes en la cual tengo conocimientos en su desarrolo.</p> -->
@@ -120,10 +121,43 @@
         </section>
     
     </div>
+    <!-- diseño de Popup -->
+    <div class="modal" id="idModal" tabindex="-1" >
+        <div class=" box" >
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span class="btnClose" id= "btnClose" aria-hidden="true">&times;</span>
+              </button>
+            <div>
+                <br>  
+              <h4> Mi Portfolio web está en proceso de desarrolo,
+                 por ahora no tiene nada funcional, pero te cuento que me encuentro capacitandome en JavaScript para poder complementarlo. <br>
+                    <br> MUCHAS GRACIAS POR VISITAR MI PÁGINA.
+                </h4>
+            </div>
+        </div>
+      </div>
     <br></br>
     <div class="footer">
         <footer>
-            <h6 style="text-align: center;">&copy; 2021 CARLOS JESÚS</H6> 
+            <div class="container">
+                <table>
+                    <tr>
+                        <td>
+                           <a href="https://www.linkedin.com/in/carlos-jesus-4950b8173/"> <img src="./imagenes/linkedin.svg"  alt="in"></a>
+                        </td>
+                        <td>
+                            <a href="https://github.com/carlos0718"><img src="./imagenes/github.svg"  alt="github"></a>
+                        </td>
+                        <td>
+                            <a href="https://wa.me/005491562677682?text=Hola%20Carlos%20Jesús%20pactamos%20una%20entrevista%20"><img src="./imagenes/whatsapp.svg"  alt="whatsapp"></a>
+                        </td>
+                        <td >
+                            <h5 class="mt-3" style="margin-left: 250px;"> <b>&copy;  2021 CARLOS JESÚS</b></H6> 
+                        </td>
+                    </tr>
+                </div>
+            </table>
+            </div>
         </footer>
     </div>
     <!-- <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script> -->
