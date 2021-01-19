@@ -1,5 +1,23 @@
 window.addEventListener('load',() =>{
-
+    
+    const nav = document.querySelectorAll('.categoria nav ul li a');
+    nav.forEach((e) =>{
+        /* console.log(e); */
+        e.addEventListener('click',(event)=>{
+            
+            event.preventDefault();
+            event.target.classList.add('active'); 
+            e.classList.remove('active');
+            
+            /* const categorias = event.target.innerHTML.toLowerCase();
+            console.log(categorias);
+            e.filter((i)=>{
+                FALTA IMPLETAR ESTA FUNCION PARA DISCRIMINAR POR CADA ELEMENTO DE LA
+                BARRA DE BÚSQUEDA.
+            }) */
+           
+        });
+    }) 
     /* Se hace esta funcion para optimizar la creación de tag <div> en la plantilla de Proyectos.html */
     const addProject = document.getElementById('box-project'); 
     proyectos.forEach(element => {
@@ -11,20 +29,6 @@ window.addEventListener('load',() =>{
                                     type="video/mp4" </video> `
     });
 
-    const nav = document.querySelectorAll('.categoria nav ul li a');
-    nav.forEach((e) =>{
-       
-        e.addEventListener('click',(event)=>{
-            event.preventDefault();
-            e.classList.remove('active');
-            event.target.classList.add('active');
-            
-            const categorias = event.target.innerHTML.toLowerCase()
-            /* e.filter(`[class = "${categorias}"]`); */
-            console.log(categorias);
-
-        });
-    })
 
 
 
