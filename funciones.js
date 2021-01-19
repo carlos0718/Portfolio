@@ -1,8 +1,10 @@
 window.addEventListener('load',() =>{
     
+    
     const nav = document.querySelectorAll('.categoria nav ul li a');
     nav.forEach((e) =>{
         /* console.log(e); */
+        //EVENTO PARA QUE LA PAG NO SE RECARGUE CADA VEZ QUE SE SELECCIONA EN LA BARRA DE NAVEGACIÓN
         e.addEventListener('click',(event)=>{
             
             event.preventDefault();
@@ -13,11 +15,17 @@ window.addEventListener('load',() =>{
             console.log(categorias);
             e.filter((i)=>{
                 FALTA IMPLETAR ESTA FUNCION PARA DISCRIMINAR POR CADA ELEMENTO DE LA
-                BARRA DE BÚSQUEDA.
+                BARRA DE BÚSQUEDA Y APAREZCAN LAS IMAGENES CORRESPONDIENTES.
             }) */
-           
+            
         });
+        //Consultar como hacer dinamico solo la opcion de project para que nos lleva a la parte de proyectos
+       /*  const p = document.getElementsById('projects');
+        p.dispachtEvent('click') */
+        
+        
     }) 
+
     /* Se hace esta funcion para optimizar la creación de tag <div> en la plantilla de Proyectos.html */
     const addProject = document.getElementById('box-project'); 
     proyectos.forEach(element => {
