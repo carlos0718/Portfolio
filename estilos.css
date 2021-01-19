@@ -8,10 +8,27 @@ body{
     background-image:  linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
 	font-family: 'Open Sans', sans-serif;
 }
+.body-project{
+    background-image:  linear-gradient(60deg, rgb(127, 199, 174) 0%, #d0bd44 100%);
+	font-family: 'Open Sans', sans-serif;
+}
 img{
     width: 250px;
     height: 150px;
     margin: 0.2cm;
+}
+h3{
+    text-align: justify;
+    color:mintcream;
+    margin-left: 20px;
+}
+h6{
+    color:white;
+    text-align: center;
+}
+.h1-project{
+    padding: 100px;
+    font-size: 100px;
 }
 h1,h2,h5{
     text-align: center;
@@ -112,4 +129,10 @@ footer img{
     width: 40px;
     margin:0px 20px;
     
+}
+
+video{
+    padding: 20px;
+    width: 700px;
+    margin-left: 350px;
 }
