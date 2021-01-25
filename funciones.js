@@ -17,24 +17,19 @@ window.addEventListener('load',() =>{
     }) 
     
     const card = document.getElementById('table-container');
-
-    card.innerHTML = `<tr>`
-    cards.forEach(e=>{
-                    `<td>
-                        <img src="${e.imagen}" alt="${e.nombre}">    
-                    </td>
-                    <td>
-                        <img src="${e.imagen}" alt="${e.nombre}">    
-                    </td>
-                    <td>
-                        <img src="${e.imagen}" alt="${e.nombre}">    
-                    </td>
-                    <td>
-                        <img src="${e.imagen}" alt="${e.nombre}">    
-                    </td>`
+    let tr = document.createElement("tr");
+    let i = 0;
+    cards.forEach((e) => {
+        if(i%4 == 0){
+            tr = document.createElement("tr");
+        }
+        let td = document.createElement('td');
+        td.innerHTML = `<img src="${e.imagen}" alt="${e.nombre}">`
+        td.classList.add('img-container');
+        tr.append(td)
+        card.append(tr)
+        i++;
     })
-    card.innerHTML += `</tr>`
-
             
     /* Se hace esta funcion para optimizar la creación de tag <div> en la plantilla de Proyectos.html */
     const addProject = document.getElementById('box-project'); 
