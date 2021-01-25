@@ -13,16 +13,19 @@
 </head>
 <body>
     <div class="fondo">
+        <a name="about-me"></a>
         <header>
                 <div>
                     <h1><b> CARLOS JESÚS</b></h1>
                 </div>
                 <div>
                     <h2><b>DESARROLLADOR FULL-STACK</b> </h2>
-                    <h5> <br> Alumno del 2do año de la carrera de Tecnicatura Universitaria Superior de Sistemas Informáticos en la UTN-FRGP.</h5>
+                    <h5> <br> Alumno del 2do año de la carrera de Tecnicatura Universitaria Superior de Sistemas Informáticos en la UTN-FRGP.
+                        <br>    Actualmente me encuentro cursando Java Script, incluyendo React js en Coder House.  
+                        <br> Estoy en búsqueda de mi primer experiencia como developer.
+                        <br> Pero  desde hace 4 años me desempeño como Technical Support y Help Desk IT </h5>
                 </div>
         </header>
-            <!-- <p>Podés filtrar los lenguajes de programación por Front-end y Back-end.<br> Encontrarás los lenguajes en la cual tengo conocimientos en su desarrolo.</p> -->
     </div>
         <br></br>
     <div class="container" >
@@ -30,32 +33,35 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-ligth"  >
                 <ul class="nav navbar-nav navbar-center">
                     <li class="nav-item">
-                      <a class="nav-link active" href="index.html"><b> FULL-STACK</b></a>
+                      <a name="index" class="nav-link active" href="#index" id="full"><b> FULL-STACK</b></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="back-end"><b> Back-end </b></a>
+                      <a class="nav-link" href="#index" id="back-end"><b> Back-end </b></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="front-end"><b> Front-end </b></a>
+                      <a class="nav-link" href="#index" id="front-end"><b> Front-end </b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="repository"><b> IDE's/Repository</b></a>
+                        <a class="nav-link" href="#index" id="repository"><b> IDE's</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="frameworks"><b> Framework's/Library </b></a>
+                        <a class="nav-link" href="#index" id="frameworks"><b> Framework's </b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#h1-project" id="projects"><b> Project's</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me" ><b> About me</b></a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
     <br></br>
-    <div class="container">
-        <section class="grid" id="grid">
-            <table >
-                <tr>
+    <div  class="container">
+         <section class="grid" id="grid">
+            <table class="table-container" id="table-container">
+                <!--<tr>
                     <td class="img-container">
                         <img class="front-end" src="./imagenes/html5.png" alt="html5">    
                     </td>
@@ -71,61 +77,59 @@
                 </tr>
                 <tr>
                     <td class="img-container">
-                        <img class="back-end" src="./imagenes/c++.png" alt="c++">
+                        <img categoria="back-end" src="./imagenes/c++.png" alt="c++">
                     </td>
                     <td class="img-container">
-                        <img class="back-end" src="./imagenes/csharp_api.jpg" alt="c#">
-                    </t>
-                    <td class="img-container"
-                    data-categoria="ide's">
-                    <img src="./imagenes/vs.png" alt="vs">
-                </td>
-                <td class="img-container"
-                data-categoria="ide's">
-                <img src="./imagenes/vscode.jpg" alt="vscode">
-            </td>
-            </tr>
-            <tr>
-                    <td class="img-container">
-                        <img class="framework's" src="./imagenes/net.png" alt="net">
+                        <img categoria="back-end" src="./imagenes/csharp_api.jpg" alt="c#">
                     </td>
                     <td class="img-container">
-                        <img src="./imagenes/git.png" alt="git">
+                        <img categoria="ide's" src="./imagenes/vs.png" alt="vs">
                     </td>
                     <td class="img-container">
-                        <img class="framework's" src="./imagenes/SQL.jpg" alt="sql">
+                        <img categoria="ide's" src="./imagenes/vscode.jpg" alt="vscode">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="img-container">
+                        <img categoria="framework's" src="./imagenes/net.png" alt="net">
                     </td>
                     <td class="img-container">
-                        <img class="framework's" src="./imagenes/bootstrap.png" alt="bootstrap">
+                        <img categoria="ide's" src="./imagenes/git.png" alt="git">
+                    </td>
+                    <td class="img-container">
+                        <img categoria="framework's" src="./imagenes/SQL.jpg" alt="sql">
+                    </td>
+                    <td class="img-container">
+                        <img categoria="framework's" src="./imagenes/bootstrap.png" alt="bootstrap">
                     </td>
                 </tr>
                 <tr>    
                     <td class="img-container">
-                        <img class="ide's" src="./imagenes/codeblocks.png" alt="codeblocks">
+                        <img categoria="ide's" src="./imagenes/codeblocks.png" alt="codeblocks">
                     </td>
                     <td class="img-container">
-                        <img class="back-end" src="./imagenes/lenguaje-java.png" alt="java">
+                        <img categria="back-end" src="./imagenes/lenguaje-java.png" alt="java">
                     </td>
                     <td class="img-container">
-                        <img class="back-end" src="./imagenes/reactjs.png" alt="reactjs">
+                        <img categoria="back-end" src="./imagenes/reactjs.png" alt="reactjs">
                     </td>
                     <td class="img-container">
-                        <img class="back-end" src="./imagenes/Jquery.png" alt="jquery">
+                        <img categoria="back-end" src="./imagenes/Jquery.png" alt="jquery">
                     </td>
                 </tr>
                 <tr>    
                     <td class="img-container">
-                        <img class="framework's" src="./imagenes/aspnet.jpg" alt="codeblocks">
-                    </td>
-                    <!-- <td class="img-container">
-                        <img class="" src="" alt="">
+                        <img categoria="framework's" src="./imagenes/aspnet.jpg" alt="aspnet">
                     </td>
                     <td class="img-container">
-                        <img class="" src="" alt="">
-                    </td> -->
-                </tr>
+                        <img categoria="" src="" alt="">
+                    </td>
+                    <td class="img-container">
+                        <img categoria="" src="" alt="">
+                    </td> 
+                </tr>-->
             </table>   
-        </section>
+        </section> 
     <section class="body-project">
         <div>
             <a name="h1-project">
@@ -175,7 +179,7 @@
                             <a href="https://wa.me/005491562677682?text=Hola%20Carlos%20Jesús%20pactamos%20una%20entrevista%20"><img src="./imagenes/whatsapp.svg"  alt="whatsapp"></a>
                         </td>
                         <td >
-                            <h5 class="mt-3" style="margin-left: 250px;"> <b>&copy;  2021 CARLOS JESÚS</b></H6> 
+                            <h5 class="mt-3" style="margin-left: 250px;"> <b>&copy;  2021 CARLOS JESÚS</b></h5> 
                         </td>
                     </tr>
                 </div>
