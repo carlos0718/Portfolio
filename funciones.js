@@ -1,31 +1,36 @@
 window.addEventListener('load',() =>{
-    
-    
+
     const nav = document.querySelectorAll('.categoria nav ul li a');
     nav.forEach((e) =>{
         /* console.log(e); */
-        //EVENTO PARA QUE LA PAG NO SE RECARGUE CADA VEZ QUE SE SELECCIONA EN LA BARRA DE NAVEGACIÓN
         e.addEventListener('click',(event)=>{
             
-            event.preventDefault();
             event.target.classList.add('active'); 
-            e.classList.remove('active');
-            
-            /* const categorias = event.target.innerHTML.toLowerCase();
-            console.log(categorias);
-            e.filter((i)=>{
-                FALTA IMPLETAR ESTA FUNCION PARA DISCRIMINAR POR CADA ELEMENTO DE LA
-                BARRA DE BÚSQUEDA Y APAREZCAN LAS IMAGENES CORRESPONDIENTES.
-            }) */
-            
-        });
-        //Consultar como hacer dinamico solo la opcion de project para que nos lleva a la parte de proyectos
-       /*  const p = document.getElementsById('projects');
-        p.dispachtEvent('click') */
-        
-        
+            e.classList.remove('active'); 
+            const categorias = event.target.innerHTML.toLowerCase();
+            /* console.log(categorias); */
+            cards.filter((i) =>{
+                
+                    console.log(i.tipo=== categorias);
+            })
+        })
     }) 
-
+    
+    const card = document.getElementById('table-container');
+    let tr = document.createElement("tr");
+    let i = 0;
+    cards.forEach((e) => {
+        if(i%4 == 0){
+            tr = document.createElement("tr");
+        }
+        let td = document.createElement('td');
+        td.innerHTML = `<img src="${e.imagen}" alt="${e.nombre}">`
+        td.classList.add('img-container');
+        tr.append(td)
+        card.append(tr)
+        i++;
+    })
+            
     /* Se hace esta funcion para optimizar la creación de tag <div> en la plantilla de Proyectos.html */
     const addProject = document.getElementById('box-project'); 
     proyectos.forEach(element => {
@@ -33,20 +38,17 @@ window.addEventListener('load',() =>{
                                     <h6> <b>${element.descripcion}</b> </h6>
                                     <h6> <b> Tecnologías :  ${element.tecnologias} </b></h6>
                                     <a href="${element.codigofuente}"><h6>Repositorio del Codigo Fuente Aqui</h6></a> 
-                                    <video controls autoplay> <source src="${element.video}" 
+                                    <video controls autoplay> <source src="${element.video}" >
                                     type="video/mp4" </video> `
     });
-
-
-
-
-/*DOM que se creo para hacer el popup 
-let modal = document.getElementById('idModal');
-let close = document.getElementById('btnClose');
-
-close.addEventListener('click',function(){
-    modal.style.display = 'none';
-}) 
-se comenta por que ya no se precisa*/
-
+    
+    /*DOM que se creo para hacer el popup 
+    let modal = document.getElementById('idModal');
+    let close = document.getElementById('btnClose');
+    
+    close.addEventListener('click',function(){
+        modal.style.display = 'none';
+    }) 
+    se comenta por que ya no se precisa*/
+    
 })
