@@ -10,6 +10,7 @@ $(document).ready(function(){
 
         /*$('.card-item[category="'+item+'"]').show(); */
         const card = document.getElementById('table-container');
+        card.innerHTML = '';
         let tr = document.createElement("tr");
         let cont = 0;
         /* muestra las cards del elemento seleccionado de la barra de navegación */
