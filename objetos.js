@@ -46,102 +46,109 @@ const cards = [
         "id" : 0,
         "imagen" : "./imagenes/html5.png",
         "nombre" : "html5",
-        "tipo" : "front-end"
+        "categoria" : "front-end"
     },
     {
         "id" : 1,
         "imagen" : "./imagenes/css3-logo.png",
         "nombre" : "css3",
-        "tipo" : "front-end"
+        "categoria" : "front-end"
     },
     {
         "id" : 2,
         "imagen" : "./imagenes/javascript.png",
         "nombre" : "js",
-        "tipo" : "front-end"
+        "categoria" : "front-end"
     },
     {
         "id" : 3,
         "imagen" : "./imagenes/python.png",
         "nombre" : "py",
-        "tipo" : "back-end"
+        "categoria" : "back-end"
     },
     {
         "id" : 4,
         "imagen" : "./imagenes/c++.png",
         "nombre" : "c++",
-        "tipo" : "back-end"
+        "categoria" : "back-end"
     },
     {
         "id" : 5,
         "imagen" : "./imagenes/csharp_api.jpg",
         "nombre" : "c#",
-        "tipo" : "back-end"
+        "categoria" : "back-end"
     },
     {
         "id" :6,
         "imagen" : "./imagenes/vscode.jpg",
         "nombre" : "vscode",
-        "tipo" : "ide"
+        "categoria" : "ides"
     },
     {
         "id" : 7,
         "imagen" : "./imagenes/net.png",
         "nombre" : "net",
-        "tipo" : "ide"
+        "categoria" : "ides"
     },
     {
         "id" : 8,
         "imagen" : "./imagenes/git.png",
         "nombre" : "git",
-        "tipo" : "ide"
+        "categoria" : "ides"
     },
     {
         "id" : 9,
         "imagen" : "./imagenes/SQL.jpg",
         "nombre" : "sql",
-        "tipo" : "back-end"
+        "categoria" : "back-end"
     },
     {
         "id" : 10,
         "imagen" : "./imagenes/bootstrap.png",
         "nombre" : "bootstrap",
-        "tipo" : "libreria"
+        "categoria" : "frameworks"
     },
     {
         "id" : 11,
         "imagen" : "./imagenes/codeblocks.png",
         "nombre" : "codeblocks",
-        "tipo" : "ide"
+        "categoria" : "ides"
     },
     {
         "id" : 12,
         "imagen" : "./imagenes/lenguaje-java.png",
         "nombre" : "java",
-        "tipo" : "back-end"
+        "categoria" : "back-end"
     },
     {
         "id" : 13,
         "imagen" : "./imagenes/reactjs.png",
         "nombre" : "reactjs",
-        "tipo" : "libreria"
+        "categoria" : "frameworks"
     },
     {
         "id" : 14,
         "imagen" : "./imagenes/Jquery.png",
         "nombre" : "jquery",
-        "tipo" : "libreria"
+        "categoria" : "frameworks"
     },
     {
         "id" : 15,
         "imagen" : "./imagenes/aspnet.jpg",
         "nombre" : "aspnet",
-        "tipo" : "back-end"
+        "categoria" : "back-end"
     },
     {
         "id" : 16,
         "imagen" : "./imagenes/vs.png",
         "nombre" : "vs",
-        "tipo" : "ide"
+        "categoria" : "ides"
+    },
+    {
+        "id" : 17,
+        "imagen" : "./imagenes/ajax.png",
+        "nombre" : "ajax",
+        "categoria" : "frameworks"
     }
+
 ]
