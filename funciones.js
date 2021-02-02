@@ -21,8 +21,10 @@ window.addEventListener('load',() =>{
     
     crearCard();
     
-            
-    /* Se hace esta funcion para optimizar la creación de tag <div> en la plantilla de Proyectos.html */
+    /* inicio
+    ** SE COMENTO POR QUE SE ACTUALIZA CONDIGO CON ARCHIVO JSON
+    /* Se hace esta funcion para optimizar la creación de tag <div> en la plantilla de Proyectos.html 
+
     const addProject = document.getElementById('box-project'); 
     proyectos.forEach(element => {
         addProject.innerHTML += ` <h2> <b>${element.nombre}</b> </h2>
@@ -32,7 +34,33 @@ window.addEventListener('load',() =>{
                                     <video controls autoplay> <source src="${element.video}" >
                                     type="video/mp4" </video> `
     });
+    **fin
+    */
     
+    /*inicio 
+    ** SE GENERA CONTENIDO DE PROYECTOS CONSUMIENTO API LOCA CON AJAX
+    */
+    const addProject = document.getElementById('box-project'); 
+    let contenidoJson = [];
+    $.ajax({
+        url: "proyecto.json",
+        dataType: "json",
+        success: function (contenidoJson) {
+            localStorage.contenidoJson = JSON.stringify(contenidoJson);
+            $.each(collection, function (i) { 
+                 
+                addProject.innerHTML += ` <h2> <b>${contenidoJson[i].nombre}</b> </h2>
+                                        <h6> <b>${contenidoJson[i].descripcion}</b> </h6>
+                                        <h6> <b> Tecnologías :  ${contenidoJson[i].tecnologias} </b></h6>
+                                        <a href="${contenidoJson[i].codigofuente}"><h6>Repositorio del Codigo Fuente Aqui</h6></a> 
+                                        <video controls autoplay> <source src="${contenidoJson[i].video}" >
+                                        type="video/mp4" </video> `
+            });
+        }
+    });
+    /* fin */
+
+
     /*DOM que se creo para hacer el popup 
     let modal = document.getElementById('idModal');
     let close = document.getElementById('btnClose');
@@ -43,6 +71,8 @@ window.addEventListener('load',() =>{
     se comenta por que ya no se precisa*/
     
 })
+
+
 function crearCard(){
     const card = document.getElementById('table-container');
     let tr = document.createElement("tr");
