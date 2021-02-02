@@ -43,11 +43,11 @@ window.addEventListener('load',() =>{
     const addProject = document.getElementById('box-project'); 
     let contenidoJson = [];
     $.ajax({
-        url: "proyecto.json",
+        url: "proyectos.json",
         dataType: "json",
         success: function (contenidoJson) {
             localStorage.contenidoJson = JSON.stringify(contenidoJson);
-            $.each(collection, function (i) { 
+            $.each(contenidoJson, function (i) { 
                  
                 addProject.innerHTML += ` <h2> <b>${contenidoJson[i].nombre}</b> </h2>
                                         <h6> <b>${contenidoJson[i].descripcion}</b> </h6>
