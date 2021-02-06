@@ -19,7 +19,7 @@
         "id" : 2,
         "nombre" :"Ticketera",
         "tecnologias" : ["C#", " ASP.NET", " .NET Framework", " Visual Studio Community"," HTML5", " Bootstrap", " CSS"],
-        "descripcion" : "App Web, hecho en Web Form de ASP.NET para el curso de Programación de la facultad(App en proceso de desarrollo).",
+        "descripcion" : "App Web, hecho en Web Form de ASP.NET para el curso de Programación de la facultad(App de desarrollo).",
         "video" : "./imagenes/tkt.mp4",
         "codigofuente" : "https://github.com/carlos0718/TPC_Gonzalez-Jesus"
     },

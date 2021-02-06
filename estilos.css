@@ -12,6 +12,20 @@ body{
    /*  background-image:  linear-gradient(60deg, rgb(127, 199, 174) 0%, #d0bd44 100%); */
 	font-family: 'Open Sans', sans-serif;
 }
+.container-project{
+    margin-left: 6vw;
+}
+#box-project h2{
+    margin-top: 40px;
+    margin-left: 2vw;
+}
+#box-project h6{
+    font-size: 13px;
+    margin: 10px;
+    border: 7px;
+    text-align:center;
+    margin-left: 4vw;
+}
 img{
     width: 250px;
     height: 150px;
@@ -27,7 +41,7 @@ h6{
     text-align: center;
 }
 .h1-project{
-    padding: 80px 100px;
+    padding: 60px ;
     font-size: 100px;
 }
 h1,h2,h5{
@@ -131,7 +145,19 @@ footer img{
 }
 
 video{
-    padding: 20px;
-    width: 700px;
-    margin-left: 200px;
+    width: 35vw;
+    height: 20vw;
+/*     margin-left: 6vw; */
+    
+}
+.arrow-up{
+    height: 3vw;
+    width: 3vw;
+    margin-left: 42vw;
+
+}
+.video-card{
+    margin: 8px;
+    text-align: center;
+    width: 850px;
 }

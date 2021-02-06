@@ -9,13 +9,6 @@ window.addEventListener('load',() =>{
             /* funcion para desavtivar/activar nav-item seleccionado */
             event.target.classList.add('active'); 
             e.classList.remove('active'); 
-
-           /*  const categorias = event.target.innerHTML.toLowerCase();
-           
-            cards.filter((i) =>{
-                
-                    console.log(i.tipo=== categorias);
-            }) */
         })
     }) 
     
@@ -47,19 +40,52 @@ window.addEventListener('load',() =>{
         dataType: "json",
         success: function (contenidoJson) {
             localStorage.contenidoJson = JSON.stringify(contenidoJson);
+            let tr = document.createElement('tr');
+            let i = 0;
             $.each(contenidoJson, function (i) { 
                  
-                addProject.innerHTML += ` <h2> <b>${contenidoJson[i].nombre}</b> </h2>
+                if(i % 2 == 0){
+                    tr = document.createElement('tr');
+                }
+                let td = document.createElement('td');
+                td.innerHTML = `<h2> <b>${contenidoJson[i].nombre}</b> </h2>
+                                <h6> <b>${contenidoJson[i].descripcion}</b> </h6>
+                                <h6> <b> Tecnologías :  ${contenidoJson[i].tecnologias} </b></h6>
+                                <a href="${contenidoJson[i].codigofuente}"><h6>Repositorio del Codigo Fuente Aqui</h6></a> 
+                                <video controls autoplay> <source src="${contenidoJson[i].video}" >
+                                type="video/mp4" </video>`
+                td.classList.add('video-card');
+                tr.append(td);
+                addProject.append(tr);
+                i++;
+
+                /* addProject.innerHTML += ` <h2> <b>${contenidoJson[i].nombre}</b> </h2>
                                         <h6> <b>${contenidoJson[i].descripcion}</b> </h6>
                                         <h6> <b> Tecnologías :  ${contenidoJson[i].tecnologias} </b></h6>
                                         <a href="${contenidoJson[i].codigofuente}"><h6>Repositorio del Codigo Fuente Aqui</h6></a> 
                                         <video controls autoplay> <source src="${contenidoJson[i].video}" >
-                                        type="video/mp4" </video> `
+                                        type="video/mp4" </video> ` */
             });
         }
     });
     /* fin */
 
+    /**inicio
+     * ANIMACIONES DE SCROOL EN JQUERY
+     * arrow-up : animación que lleva a arriba de todo con un delay de 3s al hacer click en la flecha
+     * project . animación que te lleva hasta la parte de los proyectos con el delay de 3s
+     */
+    $('.arrow-up').click(()=>{
+        $('html,body').animate({scrollTop: '0px'},3000)
+    })
+    
+    $('.project').click(()=> { 
+        $('html,body').animate({scrollTop:$('.h1-project').offset().top},3000)
+        
+    });
+   /**fin*/
+       
+    
 
     /*DOM que se creo para hacer el popup 
     let modal = document.getElementById('idModal');
