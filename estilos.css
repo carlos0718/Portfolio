@@ -151,13 +151,41 @@ video{
     
 }
 .arrow-up{
-    height: 3vw;
-    width: 3vw;
-    margin-left: 42vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4vw;
+    height: 4vw;
 
 }
 .video-card{
     margin: 8px;
     text-align: center;
     width: 850px;
+}
+.cotizador{
+    margin: 10vw;
+    background-color: rgb(160, 175, 93);
+}
+.formulario{
+    padding: 1vw 3vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+.button{
+    background-color: rgb(218, 203, 121);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: rgb(218, 203, 121);
+
+}
+.form-precio{
+    width: 12vw;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }

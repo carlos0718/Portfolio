@@ -152,3 +152,43 @@ const cards = [
     }
 
 ]
+
+const cotizador = [
+    {
+        "id" : 1,
+        "categoria" : "App Web Básico",
+        "tecnologias" : ["HTML5,CSS3,BOOTSTRAP,VISUAL STUDIO CODE"],
+        "precio" : "$16.000"
+    },
+    {
+        "id" : 2,
+        "categoria" : "App Web Funcional",
+        "tecnologias" : ["HTML5,CSS3,BOOTSTRAP,JS,REACT JS,VISUAL STUDIO CODE"],
+        "precio" : "$18.500"
+    },
+    {
+        "id" : 3,
+        "categoria" : "App Escritorio",
+        "tecnologias" : ["C#,.NET FRAMEWORK,VISUAL STUDIO 2019,SQL Server"],
+        "precio" : "$18.500"
+    },
+    {
+        "id" : 4,
+        "categoria" : "App de Consola",
+        "tecnologias" : ["C++ ó PYTHON ó JAVA"],
+        "precio" : "$10.000"
+    },
+    {
+        "id" : 5,
+        "categoria" : "E-Commerce",
+        "tecnologias" : ["HTML5,CSS3,BOOTSTRAP,JS,VISUAL STUDIO CODE,NODE JS o SQL server"],
+        "precio" : "$20.500"
+    },
+    {
+        "id" : 6,
+        "categoria" : "E-Commerce en ASP.NET",
+        "tecnologias" : ["C#,ASP.NET,.NET FRAMEWORK,HTML5,CSS3,BOOTSTRAP,VISUAL STUDIO 2019,SQL Server"],
+        "precio" : "$20.500"
+    }
+
+]
