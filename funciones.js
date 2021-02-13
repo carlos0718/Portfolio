@@ -70,6 +70,7 @@ window.addEventListener('load',() =>{
     });
     /* fin */
 
+    let ocultarCards = document.getElementsByClassName('table-container');
     /**inicio
      * ANIMACIONES DE SCROOL EN JQUERY
      * arrow-up : animación que lleva a arriba de todo con un delay de 3s al hacer click en la flecha
@@ -85,8 +86,6 @@ window.addEventListener('load',() =>{
     });
    /**fin*/
        
-    
-
     /*DOM que se creo para hacer el popup 
     let modal = document.getElementById('idModal');
     let close = document.getElementById('btnClose');
@@ -95,9 +94,26 @@ window.addEventListener('load',() =>{
         modal.style.display = 'none';
     }) 
     se comenta por que ya no se precisa*/
-    
-})
 
+    let select = document.getElementById('select');
+    let inputDescription = document.getElementById('input-tech');
+    let appBasic = document.getElementById('appBasic');
+    let descripcion = document.getElementById('descripcion');
+    let precio = document.getElementById('precio');
+
+    /* console.log(appBasic.textContent); */
+    
+    select.addEventListener('change',()=>{
+        for (const i in cotizador) {
+            if (select.value=== `${cotizador[i].categoria}`) {
+                descripcion.innerHTML = `<input class="form-control" type="text" value="${cotizador[i].tecnologias}">`;
+                precio.innerHTML = `<input style="text-align:center" class="form-control" type="text" value="${cotizador[i].precio}">`
+            }
+        }
+    })
+    
+
+})
 
 function crearCard(){
     const card = document.getElementById('table-container');
