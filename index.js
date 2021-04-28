@@ -13,23 +13,6 @@ window.addEventListener('load',() =>{
     }) 
     
     crearCard();
-    
-    /* inicio
-    ** SE COMENTO POR QUE SE ACTUALIZA CONDIGO CON ARCHIVO JSON
-    /* Se hace esta funcion para optimizar la creación de tag <div> en la plantilla de Proyectos.html 
-
-    const addProject = document.getElementById('box-project'); 
-    proyectos.forEach(element => {
-        addProject.innerHTML += ` <h2> <b>${element.nombre}</b> </h2>
-                                    <h6> <b>${element.descripcion}</b> </h6>
-                                    <h6> <b> Tecnologías :  ${element.tecnologias} </b></h6>
-                                    <a href="${element.codigofuente}"><h6>Repositorio del Codigo Fuente Aqui</h6></a> 
-                                    <video controls autoplay> <source src="${element.video}" >
-                                    type="video/mp4" </video> `
-    });
-    **fin
-    */
-    
     /*inicio 
     ** SE GENERA CONTENIDO DE PROYECTOS CONSUMIENTO API LOCA CON AJAX
     */
@@ -48,10 +31,10 @@ window.addEventListener('load',() =>{
                     tr = document.createElement('tr');
                 }
                 let td = document.createElement('td');
-                td.innerHTML = `<h2> <b>${contenidoJson[i].nombre}</b> </h2>
+                td.innerHTML = `<div class="detail-video"> <h2> <b>${contenidoJson[i].nombre}</b> </h2>
                                 <h6> <b>${contenidoJson[i].descripcion}</b> </h6>
                                 <h6> <b> Tecnologías :  ${contenidoJson[i].tecnologias} </b></h6>
-                                <a href="${contenidoJson[i].codigofuente}"><h6>Repositorio del Codigo Fuente Aqui</h6></a> 
+                                <a href="${contenidoJson[i].codigofuente}"><h6>Repositorio del Codigo Fuente Aqui</h6></a></div> 
                                 <video controls autoplay> <source src="${contenidoJson[i].video}" >
                                 type="video/mp4" </video>`
                 td.classList.add('video-card');
@@ -124,9 +107,9 @@ function crearCard(){
             tr = document.createElement("tr");
         }
         let td = document.createElement('td');
-        td.innerHTML = `<img src="${e.imagen}" alt="${e.nombre}">`
-        td.classList.add('card-item');
-        td.classList.add('img-container');
+        td.innerHTML = `<img src="${e.imagen}" alt="${e.nombre}" class='img'>`
+        /* td.classList.add('img'); */
+        td.classList.add('cardImg');
         tr.append(td);
         card.append(tr);
         i++;

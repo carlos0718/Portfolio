@@ -1,4 +1,4 @@
-const proyectos = [
+/* const proyectos = [
     {
         "id" : 0,
         "nombre" :"Carrito de compras",
@@ -39,7 +39,7 @@ const proyectos = [
         "video" : "",
         "codigofuente" : ""
     }
-]
+] */
 
 const cards = [
     {
@@ -149,6 +149,12 @@ const cards = [
         "imagen" : "./imagenes/ajax.png",
         "nombre" : "ajax",
         "categoria" : "frameworks"
+    },
+    {
+        "id" : 18,
+        "imagen" : "./imagenes/firebase.png",
+        "nombre" : "firebase",
+        "categoria" : "back-end"
     }
 
 ]

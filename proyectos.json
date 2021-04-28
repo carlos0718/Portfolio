@@ -38,5 +38,13 @@
         "descripcion" : "App de consola para registrar pedidos de comido, datos de usuario y precio del pedido.",
         "video" : "./imagenes/appGastronomico.mp4",
         "codigofuente" : ""
+    },
+    {
+        "id" : 5,
+        "nombre" :"E-commerce de Ropa",
+        "tecnologias" : ["React-js", "Bootstrap","Firebase"],
+        "descripcion" : "Tienda online de ropa. Categorizada por tipo de prenda ",
+        "video" : "./imagenes/e-commerce.mp4",
+        "codigofuente" : "https://github.com/carlos0718/React-Js/tree/main/dress-carlosjesus"
     }
 ]
